@@ -1,0 +1,34 @@
+.content {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+}
+
+.header {
+    background: #333652;
+    height: 60px;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.toggle-bar {
+    margin-top: 100px;
+}
+
+app-filter-pane {
+    flex: 0;
+}
+
+app-dashboard {
+    flex: 1;
+}

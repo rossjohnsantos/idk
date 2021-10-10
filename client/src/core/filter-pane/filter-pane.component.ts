@@ -17,7 +17,7 @@ export class FilterPaneComponent implements OnInit {
   constructor(public ss: StocksService) {
     this.ss.getStocks().subscribe(stocks => {
      for (const ticker of stocks) {
-       this.tickers.push(ticker['Symbol'] + ': ' + ticker['Company Name']);
+       this.tickers.push(ticker['Symbol'] + ': ' + ticker['Name']);
      }
      console.log(this.tickers)
     })

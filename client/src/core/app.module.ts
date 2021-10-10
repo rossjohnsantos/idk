@@ -13,6 +13,9 @@ import { CalendarModule } from 'primeng/calendar';
 import { CardModule } from 'primeng/card';
 import { FilterPaneComponent } from './filter-pane/filter-pane.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FormsModule} from '@angular/forms';
+import { AutoCompleteModule } from 'primeng/autocomplete';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SidebarModule,
     InputTextModule,
     CalendarModule,
-    CardModule
+    CardModule,
+    FormsModule,
+    AutoCompleteModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

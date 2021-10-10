@@ -52,7 +52,10 @@
     width: 85%;
 }
 
-::ng-deep app-filter-pane .p-inputtext {
+::ng-deep app-filter-pane .p-autocomplete {
     width: 85%;
 }
- 
+
+::ng-deep app-filter-pane .p-inputtext {
+    width: 100%;
+}

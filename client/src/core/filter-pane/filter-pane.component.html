@@ -6,10 +6,14 @@
     <div class="sidebar-inputs">
       <span>
         <i class="pi pi-search"></i>
-        <input 
+        <p-autoComplete 
           id="keyword" 
-          type="text"
-          placeholder="Keyword" pInputText>
+          [(ngModel)]="selectedTicker"
+          [suggestions]="filteredTickers"
+          (completeMethod)="filterStock($event)"
+          [minLength]="1"
+          placeholder="Ticker"
+          appendTo="body"></p-autoComplete>
       </span>
       <span>
         <i class="pi pi-calendar"></i>

@@ -57,9 +57,17 @@ table {
 	border: #FAD02C
 }
 
+.p-button:focus {
+	box-shadow: none;
+	outline: 0 none;
+}
+
+.p-button.p-button-link {
+	color: white;
+}
+
 .p-button:hover {
-	background-color: #FAD02e;
-	background: #FAD02C;
+	background-color: #f7c500 !important;
 }
 
 .p-ripple.p-element {
